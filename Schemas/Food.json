@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "Freezer/Food",
+  "$description": "schema for Food items",
+  "food":
+  {
+    "title": "the item",
+    "type": "object",
+    "description": "data relevant to this item of food",
+    "properties":
+    {
+      "id":
+      {
+        "title": "id generated when item is added to the database",
+        "type": "integer"
+      },
+      "name":
+      {
+        "title": "name of item",
+        "type": "string"
+      },
+      "itemType":
+      {
+        "title": "type of item",
+        "type": "string"
+      },
+      "quantity":
+      {
+        "title": "quantity of this item",
+        "type": "integer"
+      },
+      "date added":
+      {
+        "title": "date the item was added",
+        "type": "integer"
+      }
+    },
+    "required": ["id", "name", "itemType", "quantity", "date added"]
+  }
+}

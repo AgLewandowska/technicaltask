@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "Freezer.search/Search",
+  "$description": "schema for a search",
+  "search":
+  {
+    "title": "search for an item",
+    "type": "object",
+    "description": "search for at item by one field",
+    "properties":
+    {
+      "search by":
+      {
+        "title": "the field to search by",
+        "type": "string"
+      },
+      "search string":
+      {
+        "title": "the search string",
+        "type": "string"
+      }
+    },
+    "required": ["search by", "search string"]
+  }
+}
